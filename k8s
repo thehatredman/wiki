@@ -1,0 +1,4 @@
+[ERROR CRI]: container runtime is not running: output: time="2024-06-26T00:51:37+07:00" level=fatal msg="validate service connection: validate CRI v1 runtime API for endpoint \"unix:///var/run/containerd/containerd.sock\": rpc error: code = Unimplemented desc = unknown service runtime.v1.RuntimeService"
+vi /etc/containerd/config.toml
+
+#disabled_plugins = ["cri"]
